@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1.Classlar
 {
@@ -30,9 +31,29 @@ namespace WindowsFormsApp1.Classlar
 		public string Gorevi { get => gorevi; set => gorevi = value; }
 		public string Resim { get => resim; set => resim = value; }
 
-		public void kullaniciGirisi()
+		public void kullaniciGirisi(TextBox txtbSifre,TextBox txtbKullaniciAdi)
 		{
-
+			if(txtbKullaniciAdi.Text=="" || txtbSifre.Text == "")
+			{
+				MessageBox.Show("kullanıcı adı veya sifre boş olamaz!","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning) //!!!!
+			}
+			else
+			{
+				baglanti.Open();
+				SqlCommand komut = new SqlCommand("select * from kullanici where kullaniciadi='"+txtbKullaniciAdi.Text+"' and sifre = '"+txtbSifre.Text+"'",baglanti);
+				SqlDataReader dr = komut.ExecuteReader();
+				if(dr.Read())
+				{
+					frmAnaSayfa anasayfa = new frmAnaSayfa();
+					anasayfa.Show();
+					frmKullaniciGirisi.ActiveForm.Visible = false;
+				}
+				else
+				{
+					MessageBox.Show("Kullanıcı adı veya sifrenizi kontrol ediniz!!!", "Uyarı-2",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+				}
+				baglanti.Close();
+			}
 		}
 	}
 }
