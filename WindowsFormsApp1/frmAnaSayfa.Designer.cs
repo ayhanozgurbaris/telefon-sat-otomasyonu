@@ -30,21 +30,23 @@ namespace WindowsFormsApp1
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.btnTelefonEkle = new System.Windows.Forms.Button();
-			this.btnTelefonListele = new System.Windows.Forms.Button();
-			this.btnKullaniciEkle = new System.Windows.Forms.Button();
-			this.btnKullaniciListele = new System.Windows.Forms.Button();
-			this.btnMusteriEkle = new System.Windows.Forms.Button();
-			this.btnMusteriListele = new System.Windows.Forms.Button();
-			this.btnSatisYap = new System.Windows.Forms.Button();
 			this.btnYapilanSatislar = new System.Windows.Forms.Button();
+			this.btnSatisYap = new System.Windows.Forms.Button();
+			this.btnMusteriListele = new System.Windows.Forms.Button();
+			this.btnMusteriEkle = new System.Windows.Forms.Button();
+			this.btnKullaniciListele = new System.Windows.Forms.Button();
+			this.btnKullaniciEkle = new System.Windows.Forms.Button();
+			this.btnTelefonListele = new System.Windows.Forms.Button();
+			this.btnTelefonEkle = new System.Windows.Forms.Button();
 			this.panelSayfalar = new System.Windows.Forms.Panel();
+			this.btnCikis = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel1.Controls.Add(this.btnCikis);
 			this.panel1.Controls.Add(this.btnYapilanSatislar);
 			this.panel1.Controls.Add(this.btnSatisYap);
 			this.panel1.Controls.Add(this.btnMusteriListele);
@@ -59,59 +61,14 @@ namespace WindowsFormsApp1
 			this.panel1.Size = new System.Drawing.Size(1287, 125);
 			this.panel1.TabIndex = 0;
 			// 
-			// btnTelefonEkle
+			// btnYapilanSatislar
 			// 
-			this.btnTelefonEkle.Location = new System.Drawing.Point(24, 11);
-			this.btnTelefonEkle.Name = "btnTelefonEkle";
-			this.btnTelefonEkle.Size = new System.Drawing.Size(117, 99);
-			this.btnTelefonEkle.TabIndex = 1;
-			this.btnTelefonEkle.Text = "telefon ekle";
-			this.btnTelefonEkle.UseVisualStyleBackColor = true;
-			// 
-			// btnTelefonListele
-			// 
-			this.btnTelefonListele.Location = new System.Drawing.Point(147, 11);
-			this.btnTelefonListele.Name = "btnTelefonListele";
-			this.btnTelefonListele.Size = new System.Drawing.Size(117, 99);
-			this.btnTelefonListele.TabIndex = 1;
-			this.btnTelefonListele.Text = "telefon listele";
-			this.btnTelefonListele.UseVisualStyleBackColor = true;
-			// 
-			// btnKullaniciEkle
-			// 
-			this.btnKullaniciEkle.Location = new System.Drawing.Point(270, 11);
-			this.btnKullaniciEkle.Name = "btnKullaniciEkle";
-			this.btnKullaniciEkle.Size = new System.Drawing.Size(117, 99);
-			this.btnKullaniciEkle.TabIndex = 1;
-			this.btnKullaniciEkle.Text = "kullanıcı ekle";
-			this.btnKullaniciEkle.UseVisualStyleBackColor = true;
-			// 
-			// btnKullaniciListele
-			// 
-			this.btnKullaniciListele.Location = new System.Drawing.Point(393, 11);
-			this.btnKullaniciListele.Name = "btnKullaniciListele";
-			this.btnKullaniciListele.Size = new System.Drawing.Size(117, 99);
-			this.btnKullaniciListele.TabIndex = 1;
-			this.btnKullaniciListele.Text = "kullanıcı listele";
-			this.btnKullaniciListele.UseVisualStyleBackColor = true;
-			// 
-			// btnMusteriEkle
-			// 
-			this.btnMusteriEkle.Location = new System.Drawing.Point(516, 11);
-			this.btnMusteriEkle.Name = "btnMusteriEkle";
-			this.btnMusteriEkle.Size = new System.Drawing.Size(117, 99);
-			this.btnMusteriEkle.TabIndex = 1;
-			this.btnMusteriEkle.Text = "müşteri ekle";
-			this.btnMusteriEkle.UseVisualStyleBackColor = true;
-			// 
-			// btnMusteriListele
-			// 
-			this.btnMusteriListele.Location = new System.Drawing.Point(639, 11);
-			this.btnMusteriListele.Name = "btnMusteriListele";
-			this.btnMusteriListele.Size = new System.Drawing.Size(117, 99);
-			this.btnMusteriListele.TabIndex = 1;
-			this.btnMusteriListele.Text = "müşteri listele";
-			this.btnMusteriListele.UseVisualStyleBackColor = true;
+			this.btnYapilanSatislar.Location = new System.Drawing.Point(885, 11);
+			this.btnYapilanSatislar.Name = "btnYapilanSatislar";
+			this.btnYapilanSatislar.Size = new System.Drawing.Size(117, 99);
+			this.btnYapilanSatislar.TabIndex = 1;
+			this.btnYapilanSatislar.Text = "yapılan satışlar";
+			this.btnYapilanSatislar.UseVisualStyleBackColor = true;
 			// 
 			// btnSatisYap
 			// 
@@ -122,14 +79,59 @@ namespace WindowsFormsApp1
 			this.btnSatisYap.Text = "satış yap";
 			this.btnSatisYap.UseVisualStyleBackColor = true;
 			// 
-			// btnYapilanSatislar
+			// btnMusteriListele
 			// 
-			this.btnYapilanSatislar.Location = new System.Drawing.Point(885, 11);
-			this.btnYapilanSatislar.Name = "btnYapilanSatislar";
-			this.btnYapilanSatislar.Size = new System.Drawing.Size(117, 99);
-			this.btnYapilanSatislar.TabIndex = 1;
-			this.btnYapilanSatislar.Text = "yapılan satışlar";
-			this.btnYapilanSatislar.UseVisualStyleBackColor = true;
+			this.btnMusteriListele.Location = new System.Drawing.Point(639, 11);
+			this.btnMusteriListele.Name = "btnMusteriListele";
+			this.btnMusteriListele.Size = new System.Drawing.Size(117, 99);
+			this.btnMusteriListele.TabIndex = 1;
+			this.btnMusteriListele.Text = "müşteri listele";
+			this.btnMusteriListele.UseVisualStyleBackColor = true;
+			// 
+			// btnMusteriEkle
+			// 
+			this.btnMusteriEkle.Location = new System.Drawing.Point(516, 11);
+			this.btnMusteriEkle.Name = "btnMusteriEkle";
+			this.btnMusteriEkle.Size = new System.Drawing.Size(117, 99);
+			this.btnMusteriEkle.TabIndex = 1;
+			this.btnMusteriEkle.Text = "müşteri ekle";
+			this.btnMusteriEkle.UseVisualStyleBackColor = true;
+			// 
+			// btnKullaniciListele
+			// 
+			this.btnKullaniciListele.Location = new System.Drawing.Point(393, 11);
+			this.btnKullaniciListele.Name = "btnKullaniciListele";
+			this.btnKullaniciListele.Size = new System.Drawing.Size(117, 99);
+			this.btnKullaniciListele.TabIndex = 1;
+			this.btnKullaniciListele.Text = "kullanıcı listele";
+			this.btnKullaniciListele.UseVisualStyleBackColor = true;
+			// 
+			// btnKullaniciEkle
+			// 
+			this.btnKullaniciEkle.Location = new System.Drawing.Point(270, 11);
+			this.btnKullaniciEkle.Name = "btnKullaniciEkle";
+			this.btnKullaniciEkle.Size = new System.Drawing.Size(117, 99);
+			this.btnKullaniciEkle.TabIndex = 1;
+			this.btnKullaniciEkle.Text = "kullanıcı ekle";
+			this.btnKullaniciEkle.UseVisualStyleBackColor = true;
+			// 
+			// btnTelefonListele
+			// 
+			this.btnTelefonListele.Location = new System.Drawing.Point(147, 11);
+			this.btnTelefonListele.Name = "btnTelefonListele";
+			this.btnTelefonListele.Size = new System.Drawing.Size(117, 99);
+			this.btnTelefonListele.TabIndex = 1;
+			this.btnTelefonListele.Text = "telefon listele";
+			this.btnTelefonListele.UseVisualStyleBackColor = true;
+			// 
+			// btnTelefonEkle
+			// 
+			this.btnTelefonEkle.Location = new System.Drawing.Point(24, 11);
+			this.btnTelefonEkle.Name = "btnTelefonEkle";
+			this.btnTelefonEkle.Size = new System.Drawing.Size(117, 99);
+			this.btnTelefonEkle.TabIndex = 1;
+			this.btnTelefonEkle.Text = "telefon ekle";
+			this.btnTelefonEkle.UseVisualStyleBackColor = true;
 			// 
 			// panelSayfalar
 			// 
@@ -138,6 +140,15 @@ namespace WindowsFormsApp1
 			this.panelSayfalar.Name = "panelSayfalar";
 			this.panelSayfalar.Size = new System.Drawing.Size(1287, 473);
 			this.panelSayfalar.TabIndex = 2;
+			// 
+			// btnCikis
+			// 
+			this.btnCikis.Location = new System.Drawing.Point(1008, 11);
+			this.btnCikis.Name = "btnCikis";
+			this.btnCikis.Size = new System.Drawing.Size(113, 99);
+			this.btnCikis.TabIndex = 0;
+			this.btnCikis.Text = "çıkış";
+			this.btnCikis.UseVisualStyleBackColor = true;
 			// 
 			// frmAnaSayfa
 			// 
@@ -169,6 +180,7 @@ namespace WindowsFormsApp1
 		private System.Windows.Forms.Button btnTelefonListele;
 		private System.Windows.Forms.Button btnTelefonEkle;
 		private System.Windows.Forms.Panel panelSayfalar;
+		private System.Windows.Forms.Button btnCikis;
 	}
 }
 
