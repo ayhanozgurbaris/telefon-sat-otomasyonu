@@ -11,7 +11,7 @@ namespace WindowsFormsApp1.Classlar
 	class kullanici
 	{
 
-		SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP - S5DON3B; Initial Catalog = telefonsatisotomasyonu; Integrated Security = True; Pooling=False");
+		SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-S5DON3B;Initial Catalog=telefonsatisotomasyonu;Integrated Security=True;Pooling=False");
 
 		private string adisoyadi;
 		private string telefon;
@@ -33,20 +33,22 @@ namespace WindowsFormsApp1.Classlar
 
 		public void kullaniciGirisi(TextBox txtbSifre,TextBox txtbKullaniciAdi)
 		{
-			if(txtbKullaniciAdi.Text=="" || txtbSifre.Text == "")
+			
+			if (txtbKullaniciAdi.Text=="" || txtbSifre.Text == "")
 			{
-				MessageBox.Show("kullanıcı adı veya sifre boş olamaz!","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning) //!!!!
+				MessageBox.Show("kullanıcı adı veya sifre boş olamaz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning); //!!!!
 			}
 			else
 			{
 				baglanti.Open();
-				SqlCommand komut = new SqlCommand("select * from kullanici where kullaniciadi='"+txtbKullaniciAdi.Text+"' and sifre = '"+txtbSifre.Text+"'",baglanti);
+				SqlCommand komut = new SqlCommand("select * from Kullanici where kullaniciadi='"+txtbKullaniciAdi.Text+"' and sifre = '"+txtbSifre.Text+"'",baglanti);
 				SqlDataReader dr = komut.ExecuteReader();
 				if(dr.Read())
 				{
 					frmAnaSayfa anasayfa = new frmAnaSayfa();
-					anasayfa.Show();
 					frmKullaniciGirisi.ActiveForm.Visible = false;
+					anasayfa.Show();
+					
 				}
 				else
 				{

@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
 		private void btnSifre_Click(object sender, EventArgs e)
 		{
-
+			this.Close();
 		}
 
 		private void labelYeniKullanici_Click(object sender, EventArgs e)
@@ -47,6 +47,13 @@ namespace WindowsFormsApp1
 				txtbSifre.UseSystemPasswordChar = false;
 				checkbGoster.Text = "göster";
 			}
+		}
+
+		Classlar.kullanici k = new Classlar.kullanici();
+		private void btnGiris_Click(object sender, EventArgs e)
+		{
+			k.kullaniciGirisi(txtbSifre,txtbKullaniciAdi);
+
 		}
 	}
 }

@@ -82,6 +82,7 @@ namespace WindowsFormsApp1
 			this.btnGiris.TabIndex = 3;
 			this.btnGiris.Text = "Giriş";
 			this.btnGiris.UseVisualStyleBackColor = true;
+			this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
 			// 
 			// btnSifre
 			// 
@@ -89,7 +90,7 @@ namespace WindowsFormsApp1
 			this.btnSifre.Name = "btnSifre";
 			this.btnSifre.Size = new System.Drawing.Size(109, 63);
 			this.btnSifre.TabIndex = 3;
-			this.btnSifre.Text = "Şifre";
+			this.btnSifre.Text = "iptal";
 			this.btnSifre.UseVisualStyleBackColor = true;
 			this.btnSifre.Click += new System.EventHandler(this.btnSifre_Click);
 			// 
