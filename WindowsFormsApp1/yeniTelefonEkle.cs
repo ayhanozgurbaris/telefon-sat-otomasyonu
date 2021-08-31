@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-	public partial class frmYeniKullanici : Form
+	public partial class yeniTelefonEkle : Form
 	{
-		public frmYeniKullanici()
+		public yeniTelefonEkle()
 		{
 			InitializeComponent();
-		}
-
-		private void frmYeniKullanici_Load(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label1_Click(object sender, EventArgs e)
-		{
-
 		}
 	}
 }
