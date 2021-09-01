@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
 		//anaSayfa telefon ekle
 		private void btnTelefonEkle_Click(object sender, EventArgs e)
 		{
-			yeniTelefonEkle telekle = new yeniTelefonEkle();
+			yeniTelefonEkle telekle = new yeniTelefonEkle(); 
 			FormGetir(telekle);
 		}
 
