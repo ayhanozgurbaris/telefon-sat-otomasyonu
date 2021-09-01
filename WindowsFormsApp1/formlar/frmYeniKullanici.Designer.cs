@@ -207,6 +207,7 @@ namespace WindowsFormsApp1
 			this.btnResimSec.TabIndex = 3;
 			this.btnResimSec.Text = "Resim Seç";
 			this.btnResimSec.UseVisualStyleBackColor = true;
+			this.btnResimSec.Click += new System.EventHandler(this.btnResimSec_Click);
 			// 
 			// btnEkle
 			// 
@@ -216,6 +217,7 @@ namespace WindowsFormsApp1
 			this.btnEkle.TabIndex = 4;
 			this.btnEkle.Text = "Ekle";
 			this.btnEkle.UseVisualStyleBackColor = true;
+			this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
 			// 
 			// btniptal
 			// 
@@ -225,6 +227,7 @@ namespace WindowsFormsApp1
 			this.btniptal.TabIndex = 4;
 			this.btniptal.Text = "İptal";
 			this.btniptal.UseVisualStyleBackColor = true;
+			this.btniptal.Click += new System.EventHandler(this.btniptal_Click);
 			// 
 			// frmYeniKullanici
 			// 

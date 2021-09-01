@@ -26,5 +26,29 @@ namespace WindowsFormsApp1
 		{
 
 		}
+
+		private void btniptal_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void btnResimSec_Click(object sender, EventArgs e)
+		{
+			OpenFileDialog file = new OpenFileDialog();
+			file.ShowDialog();
+			if (file.ShowDialog()==DialogResult.OK)		
+			{
+				pictureBox1.ImageLocation = file.FileName;
+
+			}
+		}
+
+		Classlar.kullanici k = new Classlar.kullanici();
+
+
+		private void btnEkle_Click(object sender, EventArgs e)
+		{
+			k.YeniKullanici(txtbAdiSoyadi.Text,txtbTelefonNo.Text,txtbAdres.Text,txtbEmail.Text,txtbKullaniciAdi.Text,txtbSifre.Text,txtbSifreTekrar.Text,txtbGorevi.Text,pictureBox1.ImageLocation);
+		}
 	}
 }

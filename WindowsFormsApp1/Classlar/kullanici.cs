@@ -70,11 +70,18 @@ namespace WindowsFormsApp1.Classlar
 			Gorevi = _Gorevi;
 			Resim = _Resim;
 
-			baglanti.Open();
-			SqlCommand komut = new SqlCommand("insert into Kullanici values()", baglanti);
-			komut.ExecuteNonQuery();
-			baglanti.Close();
-			MessageBox.Show("yeni kullanici eklendi", "uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			if (sifre == _SifreTekrar)
+			{
+				baglanti.Open();
+				SqlCommand komut = new SqlCommand("insert into Kullanici(adisoyadi,telno,adres,email,kullaniciadi,sifre,gorevi,resim) values('" + Adisoyadi + "','" + Telefon + "','" + Adres + "','" + Email + "','" + KullaniciAdi + "','" + Sifre + "','" + Gorevi + "','" + Resim + "')", baglanti);
+				komut.ExecuteNonQuery();
+				baglanti.Close();
+				MessageBox.Show("yeni kullanici eklendi", "uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+			{
+				MessageBox.Show("şifreler uymuyor", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			}
 		}
 	}
 }
