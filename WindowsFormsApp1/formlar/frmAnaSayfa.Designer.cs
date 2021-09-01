@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.btnCikis = new System.Windows.Forms.Button();
 			this.btnYapilanSatislar = new System.Windows.Forms.Button();
 			this.btnSatisYap = new System.Windows.Forms.Button();
 			this.btnMusteriListele = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@ namespace WindowsFormsApp1
 			this.btnTelefonListele = new System.Windows.Forms.Button();
 			this.btnTelefonEkle = new System.Windows.Forms.Button();
 			this.panelSayfalar = new System.Windows.Forms.Panel();
-			this.btnCikis = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -60,6 +60,15 @@ namespace WindowsFormsApp1
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1287, 125);
 			this.panel1.TabIndex = 0;
+			// 
+			// btnCikis
+			// 
+			this.btnCikis.Location = new System.Drawing.Point(1008, 11);
+			this.btnCikis.Name = "btnCikis";
+			this.btnCikis.Size = new System.Drawing.Size(113, 99);
+			this.btnCikis.TabIndex = 0;
+			this.btnCikis.Text = "çıkış";
+			this.btnCikis.UseVisualStyleBackColor = true;
 			// 
 			// btnYapilanSatislar
 			// 
@@ -114,6 +123,7 @@ namespace WindowsFormsApp1
 			this.btnKullaniciEkle.TabIndex = 1;
 			this.btnKullaniciEkle.Text = "kullanıcı ekle";
 			this.btnKullaniciEkle.UseVisualStyleBackColor = true;
+			this.btnKullaniciEkle.Click += new System.EventHandler(this.btnKullaniciEkle_Click);
 			// 
 			// btnTelefonListele
 			// 
@@ -132,6 +142,7 @@ namespace WindowsFormsApp1
 			this.btnTelefonEkle.TabIndex = 1;
 			this.btnTelefonEkle.Text = "telefon ekle";
 			this.btnTelefonEkle.UseVisualStyleBackColor = true;
+			this.btnTelefonEkle.Click += new System.EventHandler(this.btnTelefonEkle_Click);
 			// 
 			// panelSayfalar
 			// 
@@ -140,15 +151,6 @@ namespace WindowsFormsApp1
 			this.panelSayfalar.Name = "panelSayfalar";
 			this.panelSayfalar.Size = new System.Drawing.Size(1287, 473);
 			this.panelSayfalar.TabIndex = 2;
-			// 
-			// btnCikis
-			// 
-			this.btnCikis.Location = new System.Drawing.Point(1008, 11);
-			this.btnCikis.Name = "btnCikis";
-			this.btnCikis.Size = new System.Drawing.Size(113, 99);
-			this.btnCikis.TabIndex = 0;
-			this.btnCikis.Text = "çıkış";
-			this.btnCikis.UseVisualStyleBackColor = true;
 			// 
 			// frmAnaSayfa
 			// 

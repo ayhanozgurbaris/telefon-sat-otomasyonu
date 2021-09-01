@@ -57,6 +57,25 @@ namespace WindowsFormsApp1.Classlar
 				baglanti.Close();
 			}
 		}
+
+
+		public void YeniKullanici(string _AdiSoyadi,string _TelNo,string _Adres,string _Email,string _KullaniciAdi,string _Sifre,string _SifreTekrar,string _Gorevi,string _Resim )
+		{
+			Adisoyadi = _AdiSoyadi;
+			Telefon = _TelNo;
+			Adres = _Adres;
+			Email = _Email;
+			KullaniciAdi = _KullaniciAdi;
+			Sifre = _Sifre;
+			Gorevi = _Gorevi;
+			Resim = _Resim;
+
+			baglanti.Open();
+			SqlCommand komut = new SqlCommand("insert into Kullanici values()", baglanti);
+			komut.ExecuteNonQuery();
+			baglanti.Close();
+			MessageBox.Show("yeni kullanici eklendi", "uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
 	}
 }
 

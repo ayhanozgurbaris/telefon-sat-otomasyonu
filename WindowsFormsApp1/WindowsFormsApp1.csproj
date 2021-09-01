@@ -47,39 +47,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classlar\kullanici.cs" />
-    <Compile Include="frmAnaSayfa.cs">
+    <Compile Include="formlar\frmAnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAnaSayfa.Designer.cs">
+    <Compile Include="formlar\frmAnaSayfa.Designer.cs">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKullaniciGirisi.cs">
+    <Compile Include="formlar\frmKullaniciGirisi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmKullaniciGirisi.Designer.cs">
+    <Compile Include="formlar\frmKullaniciGirisi.Designer.cs">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYeniKullanici.cs">
+    <Compile Include="formlar\frmYeniKullanici.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYeniKullanici.Designer.cs">
+    <Compile Include="formlar\frmYeniKullanici.Designer.cs">
       <DependentUpon>frmYeniKullanici.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="yeniTelefonEkle.cs">
+    <Compile Include="formlar\yeniTelefonEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="yeniTelefonEkle.Designer.cs">
+    <Compile Include="formlar\yeniTelefonEkle.Designer.cs">
       <DependentUpon>yeniTelefonEkle.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmAnaSayfa.resx">
+    <EmbeddedResource Include="formlar\frmAnaSayfa.resx">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmKullaniciGirisi.resx">
+    <EmbeddedResource Include="formlar\frmKullaniciGirisi.resx">
       <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYeniKullanici.resx">
+    <EmbeddedResource Include="formlar\frmYeniKullanici.resx">
       <DependentUpon>frmYeniKullanici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -91,7 +91,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="yeniTelefonEkle.resx">
+    <EmbeddedResource Include="formlar\yeniTelefonEkle.resx">
       <DependentUpon>yeniTelefonEkle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
